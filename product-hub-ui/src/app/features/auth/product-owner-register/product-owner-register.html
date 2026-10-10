@@ -1,0 +1,22 @@
+<h2>
+    Product Owner Registration
+</h2>
+<form (ngSubmit)="register()">
+    <label for="username">
+        User name
+    </label>
+    <input 
+     type="text"
+     name="username"
+     [(ngModel)]="registerData.username" />
+<label for="password">
+   Password
+</label>
+ <input 
+    type="text"
+    name="password"
+    [(ngModel)]="registerData.password"/>
+<button type="submit">Submit</button>
+
+</form>
+

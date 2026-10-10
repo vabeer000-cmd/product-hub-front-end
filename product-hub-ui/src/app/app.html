@@ -1,0 +1,24 @@
+<h1>Hello Product</h1>
+
+<nav>
+ 
+@if(authService.isLoggedIn()){
+
+ <a routerLink="/products">Products</a><br>
+  <a routerLink="/products/cursor">
+  Cursor Pagination
+</a>
+<br>
+<button type="button" (click)="logout()">
+  Logout
+</button>
+}
+@else{
+  <a routerLink="/register">User Registration</a><br>
+  <a routerLink="/register/product-owner">Product Owner Registration</a><br>
+  <a routerLink="/login">Login</a>
+}
+
+</nav>
+
+<router-outlet></router-outlet>
